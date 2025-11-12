@@ -51,7 +51,7 @@ export default function OnePager() {
           title: '🎁 Paquete Premium',
           price: 'USD 1.250',
           desc: 'Los 3 servicios express incluidos •',
-          save: 'Ahorrás USD 300',
+          save: 'Ahorrás USD 168',
           cta: 'Consultar Paquete'
         }
       },
@@ -246,7 +246,7 @@ export default function OnePager() {
           title: '🎁 Premium Package',
           price: 'USD 1,250',
           desc: 'All 3 express services included •',
-          save: 'Save USD 300',
+          save: 'Save USD 168',
           cta: 'Inquire Package'
         }
       },
@@ -403,7 +403,7 @@ export default function OnePager() {
     {
       id: 1,
       title: 'Legacy System Rescue',
-      price: 'USD 650',
+      price: 'USD 590',
       time: 'Desde 48 h',
       description: 'Recuperación express de sistemas críticos en producción con fallas técnicas',
       deliverables: [
@@ -416,13 +416,13 @@ export default function OnePager() {
       purpose: 'Garantizar continuidad operativa donde el downtime no es opción',
       paymentLinks: {
         mercadopago: 'https://link.mercadopago.com.uy/gllera',
-        paypal: 'https://paypal.me/lleragonzalo/650'
+        paypal: 'https://paypal.me/lleragonzalo/590'
       }
     },
     {
       id: 2,
       title: 'Data Automation Suite',
-      price: 'USD 500',
+      price: 'USD 479',
       time: 'Desde 48 h',
       description: 'Automatización inteligente de procesos manuales con análisis y reportería',
       deliverables: [
@@ -435,13 +435,13 @@ export default function OnePager() {
       purpose: 'Liberar tiempo técnico y transformar tareas manuales en decisiones basadas en datos',
       paymentLinks: {
         mercadopago: 'https://link.mercadopago.com.uy/gllera',
-        paypal: 'https://paypal.me/lleragonzalo/500'
+        paypal: 'https://paypal.me/lleragonzalo/479'
       }
     },
     {
       id: 3,
       title: 'Performance Optimization',
-      price: 'USD 400',
+      price: 'USD 349',
       time: 'Desde 48 h',
       description: 'Optimización de performance para APIs y sistemas enterprise',
       deliverables: [
@@ -454,7 +454,7 @@ export default function OnePager() {
       purpose: 'Maximizar eficiencia y trazabilidad técnica en entornos de alta demanda',
       paymentLinks: {
         mercadopago: 'https://link.mercadopago.com.uy/gllera',
-        paypal: 'https://paypal.me/lleragonzalo/400'
+        paypal: 'https://paypal.me/lleragonzalo/349'
       }
     },
     {
@@ -480,7 +480,7 @@ export default function OnePager() {
     {
       id: 1,
       title: 'Legacy System Rescue',
-      price: 'USD 650',
+      price: 'USD 590',
       time: 'From 48 h',
       description: 'Express recovery of critical production systems with technical failures',
       deliverables: [
@@ -493,13 +493,13 @@ export default function OnePager() {
       purpose: 'Guarantee operational continuity where downtime is not an option',
       paymentLinks: {
         mercadopago: 'https://link.mercadopago.com.uy/gllera',
-        paypal: 'https://paypal.me/lleragonzalo/650'
+        paypal: 'https://paypal.me/lleragonzalo/590'
       }
     },
     {
       id: 2,
       title: 'Data Automation Suite',
-      price: 'USD 500',
+      price: 'USD 479',
       time: 'From 48 h',
       description: 'Intelligent automation of manual processes with analysis and reporting',
       deliverables: [
@@ -512,13 +512,13 @@ export default function OnePager() {
       purpose: 'Free technical time and transform manual tasks into data-driven decisions',
       paymentLinks: {
         mercadopago: 'https://link.mercadopago.com.uy/gllera',
-        paypal: 'https://paypal.me/lleragonzalo/500'
+        paypal: 'https://paypal.me/lleragonzalo/479'
       }
     },
     {
       id: 3,
       title: 'Performance Optimization',
-      price: 'USD 400',
+      price: 'USD 349',
       time: 'From 48 h',
       description: 'Performance optimization for enterprise APIs and systems',
       deliverables: [
@@ -531,7 +531,7 @@ export default function OnePager() {
       purpose: 'Maximize efficiency and technical traceability in high-demand environments',
       paymentLinks: {
         mercadopago: 'https://link.mercadopago.com.uy/gllera',
-        paypal: 'https://paypal.me/lleragonzalo/400'
+        paypal: 'https://paypal.me/lleragonzalo/349'
       }
     },
     {
