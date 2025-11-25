@@ -13,7 +13,7 @@ export default function OnePager() {
         title: 'Ingeniería de Software & Data\npara Sistemas Críticos.\nDesarrollos a medida',
         subtitle: 'Modernización, automatización y fortalecimiento de sistemas enterprise con entregas rápidas, seguras y auditables.',
         subtitle2: 'Especializado en Machine Learning, automatización inteligente y rescate de sistemas legacy.',
-        subtitle3: 'Promedio de entrega: 48 h, según complejidad del proyecto.',
+        subtitle3: 'Promedio de entrega: 72 h, según complejidad del proyecto.',
         cta1: 'Ver servicios',
         cta2: 'Agendar videollamada',
         cta3: 'Ver proyectos reales'
@@ -21,7 +21,7 @@ export default function OnePager() {
       differentiators: {
         title1: 'MSc + EMBA',
         desc1: 'Visión técnica y estratégica empresarial',
-        title2: '48-72h Garantizado',
+        title2: '72-96h Garantizado',
         desc2: 'Entregas express sin comprometer calidad',
         title3: 'ML & Automatización',
         desc3: 'Soluciones inteligentes, no solo scripts',
@@ -69,7 +69,7 @@ export default function OnePager() {
           desc: 'Reviso código y entorno. Te envío cotización exacta, alcance detallado y tiempos realistas.'
         },
         step3: {
-          time: '48-72h promedio',
+          time: '72-96h promedio',
           title: 'Desarrollo',
           desc: 'Implementación enfocada, updates diarios, código limpio y documentado.'
         },
@@ -208,7 +208,7 @@ export default function OnePager() {
         title: 'Software & Data Engineering\nfor Critical Systems.\nCustom Development',
         subtitle: 'Modernization, automation and strengthening of enterprise systems with fast, secure and auditable deliveries.',
         subtitle2: 'Specialized in Machine Learning, intelligent automation and legacy system rescue.',
-        subtitle3: 'Average delivery: 48 h, depending on project complexity.',
+        subtitle3: 'Average delivery: 72 h, depending on project complexity.',
         cta1: 'View services',
         cta2: 'Schedule video call',
         cta3: 'View real projects'
@@ -216,7 +216,7 @@ export default function OnePager() {
       differentiators: {
         title1: 'MSc + EMBA',
         desc1: 'Technical and strategic business vision',
-        title2: '48-72h Guaranteed',
+        title2: '72-96h Guaranteed',
         desc2: 'Express delivery without compromising quality',
         title3: 'ML & Automation',
         desc3: 'Intelligent solutions, not just scripts',
@@ -264,7 +264,7 @@ export default function OnePager() {
           desc: 'I review code and environment. I send exact quote, detailed scope and realistic timelines.'
         },
         step3: {
-          time: '48-72h average',
+          time: '72-96h average',
           title: 'Development',
           desc: 'Focused implementation, daily updates, clean and documented code.'
         },
@@ -404,7 +404,7 @@ export default function OnePager() {
       id: 1,
       title: 'Legacy System Rescue',
       price: 'USD 590',
-      time: 'Desde 48 h',
+      time: 'Desde 72 h',
       description: 'Recuperación express de sistemas críticos en producción con fallas técnicas',
       deliverables: [
         'Diagnóstico y plan de acción',
@@ -423,7 +423,7 @@ export default function OnePager() {
       id: 2,
       title: 'Data Automation Suite',
       price: 'USD 479',
-      time: 'Desde 48 h',
+      time: 'Desde 72 h',
       description: 'Automatización inteligente de procesos manuales con análisis y reportería',
       deliverables: [
         'Scripts de automatización con ML o reglas de negocio',
@@ -442,7 +442,7 @@ export default function OnePager() {
       id: 3,
       title: 'Performance Optimization',
       price: 'USD 349',
-      time: 'Desde 48 h',
+      time: 'Desde 72 h',
       description: 'Optimización de performance para APIs y sistemas enterprise',
       deliverables: [
         'Auditoría de performance y bottlenecks',
@@ -481,7 +481,7 @@ export default function OnePager() {
       id: 1,
       title: 'Legacy System Rescue',
       price: 'USD 590',
-      time: 'From 48 h',
+      time: 'From 72 h',
       description: 'Express recovery of critical production systems with technical failures',
       deliverables: [
         'Diagnosis and action plan',
@@ -500,7 +500,7 @@ export default function OnePager() {
       id: 2,
       title: 'Data Automation Suite',
       price: 'USD 479',
-      time: 'From 48 h',
+      time: 'From 72 h',
       description: 'Intelligent automation of manual processes with analysis and reporting',
       deliverables: [
         'Automation scripts with ML or business rules',
@@ -519,7 +519,7 @@ export default function OnePager() {
       id: 3,
       title: 'Performance Optimization',
       price: 'USD 349',
-      time: 'From 48 h',
+      time: 'From 72 h',
       description: 'Performance optimization for enterprise APIs and systems',
       deliverables: [
         'Performance audit and bottlenecks',
@@ -638,11 +638,11 @@ export default function OnePager() {
   const faqs = language === 'es' ? [
     {
       question: '¿Cómo determinás el tiempo de entrega?',
-      answer: 'Después del análisis inicial (1-2h) te doy una estimación realista basada en la complejidad. La mayoría de proyectos se completan en 48-72h. Si hay cambios de alcance durante el desarrollo, te informo inmediatamente antes de continuar.'
+      answer: 'Después del análisis inicial (1-2h) te doy una estimación realista basada en la complejidad. La mayoría de proyectos se completan en 72-96h. Si hay cambios de alcance durante el desarrollo, te informo inmediatamente antes de continuar.'
     },
     {
       question: '¿Qué forma de pago aceptás?',
-      answer: 'MercadoPago y PayPal. Para proyectos estándar (48-72h): 50% al iniciar, 50% a la entrega. Para proyectos urgentes o menores a 48h: 100% upfront. Facturo con todos los respaldos legales.'
+      answer: 'MercadoPago y PayPal. Para proyectos estándar (72-96h): 50% al iniciar, 50% a la entrega. Para proyectos urgentes o menores a 72h: 100% upfront. Facturo con todos los respaldos legales.'
     },
     {
       question: '¿Ofrecés soporte post-entrega?',
@@ -655,11 +655,11 @@ export default function OnePager() {
   ] : [
     {
       question: 'How do you determine delivery time?',
-      answer: 'After the initial analysis (1-2h) I give you a realistic estimate based on complexity. Most projects are completed in 48-72h. If there are scope changes during development, I inform you immediately before continuing.'
+      answer: 'After the initial analysis (1-2h) I give you a realistic estimate based on complexity. Most projects are completed in 72-96h. If there are scope changes during development, I inform you immediately before continuing.'
     },
     {
       question: 'What payment methods do you accept?',
-      answer: 'MercadoPago and PayPal. For standard projects (48-72h): 50% to start, 50% on delivery. For urgent projects or less than 48h: 100% upfront. I invoice with all legal backing.'
+      answer: 'MercadoPago and PayPal. For standard projects (72-96h): 50% to start, 50% on delivery. For urgent projects or less than 72h: 100% upfront. I invoice with all legal backing.'
     },
     {
       question: 'Do you offer post-delivery support?',
