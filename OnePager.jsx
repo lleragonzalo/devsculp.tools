@@ -690,7 +690,7 @@ export default function OnePager() {
             <div className="flex items-center gap-4">
               <button
                 onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}
-                className="flex items-center gap-2 px-3 py-1.5 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-lg text-sm font-medium transition-colors"
+                className="flex items-center gap-2 px-4 py-2.5 sm:px-3 sm:py-1.5 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-lg text-base sm:text-sm font-medium transition-colors min-h-[44px] min-w-[44px] justify-center"
                 title={language === 'es' ? 'Switch to English' : 'Cambiar a Español'}
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -749,7 +749,7 @@ export default function OnePager() {
                 href="https://calendly.com/devsculpt10/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-10 py-5 bg-gradient-to-r from-purple-500 via-purple-600 to-indigo-600 hover:from-purple-600 hover:via-purple-700 hover:to-indigo-700 text-white font-bold text-lg rounded-2xl shadow-2xl shadow-purple-500/40 hover:shadow-purple-500/60 transition-all transform hover:scale-105 flex items-center justify-center gap-3"
+                className="px-8 py-4 sm:px-10 sm:py-5 bg-gradient-to-r from-purple-500 via-purple-600 to-indigo-600 hover:from-purple-600 hover:via-purple-700 hover:to-indigo-700 text-white font-bold text-base sm:text-lg rounded-2xl shadow-2xl shadow-purple-500/40 hover:shadow-purple-500/60 transition-all transform hover:scale-105 flex items-center justify-center gap-3"
               >
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -773,7 +773,7 @@ export default function OnePager() {
       {/* Por qué elegirme - Diferenciadores */}
       <section className="py-20 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -990,41 +990,43 @@ export default function OnePager() {
               {services.slice(0, 3).map((service) => (
               <div
                 key={service.id}
-                className="bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-teal-500 transition-all hover:shadow-xl hover:shadow-teal-500/10"
+                className="bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-teal-500 transition-all hover:shadow-xl hover:shadow-teal-500/10 flex flex-col h-full"
               >
-                <h3 className="text-2xl font-bold mb-3 text-teal-400 leading-tight">{service.title}</h3>
-                <div className="flex items-baseline gap-3 mb-5">
-                  <span className="text-3xl font-bold text-white">{service.price}</span>
-                  <span className="text-slate-500">•</span>
-                  <span className="text-slate-400 text-base">{service.time}</span>
-                </div>
-                <p className="text-slate-300 mb-6 text-sm leading-relaxed">{service.description}</p>
-                
-                <div className="mb-8">
-                  <h4 className="font-bold mb-4 text-xs uppercase tracking-wider text-slate-500">{t.services.includes}</h4>
-                  <ul className="space-y-2.5">
-                    {service.deliverables.map((item, idx) => (
-                      <li key={idx} className="flex items-start group">
-                        <svg className="w-4 h-4 text-teal-400 mr-3 flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                        </svg>
-                        <span className="text-sm text-slate-300 leading-snug">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Propósito */}
-                {service.purpose && (
-                  <div className="mb-6 p-4 bg-slate-900/50 rounded-xl border border-teal-500/20">
-                    <p className="text-sm text-slate-400 italic">
-                      <strong className="text-teal-400 not-italic">{language === 'es' ? 'Propósito:' : 'Purpose:'}</strong> {service.purpose}
-                    </p>
+                <div className="flex-grow">
+                  <h3 className="text-2xl font-bold mb-3 text-teal-400 leading-tight">{service.title}</h3>
+                  <div className="flex items-baseline gap-3 mb-5">
+                    <span className="text-3xl font-bold text-white">{service.price}</span>
+                    <span className="text-slate-500">•</span>
+                    <span className="text-slate-400 text-base">{service.time}</span>
                   </div>
-                )}
+                  <p className="text-slate-300 mb-6 text-sm leading-relaxed line-clamp-3">{service.description}</p>
+                  
+                  <div className="mb-8">
+                    <h4 className="font-bold mb-4 text-xs uppercase tracking-wider text-slate-500">{t.services.includes}</h4>
+                    <ul className="space-y-2.5">
+                      {service.deliverables.map((item, idx) => (
+                        <li key={idx} className="flex items-start group">
+                          <svg className="w-4 h-4 text-teal-400 mr-3 flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
+                          <span className="text-sm text-slate-300 leading-snug">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Propósito */}
+                  {service.purpose && (
+                    <div className="mb-6 p-4 bg-slate-900/50 rounded-xl border border-teal-500/20">
+                      <p className="text-sm text-slate-400 italic">
+                        <strong className="text-teal-400 not-italic">{language === 'es' ? 'Propósito:' : 'Purpose:'}</strong> {service.purpose}
+                      </p>
+                    </div>
+                  )}
+                </div>
 
                 {/* Botones de pago - Reemplazar links */}
-                <div className="space-y-3">
+                <div className="mt-auto space-y-3">
                   <a
                     href={service.paymentLinks.mercadopago}
                     target="_blank"
@@ -1095,7 +1097,7 @@ export default function OnePager() {
             {t.process.subtitle}
           </p>
 
-          <div className="grid md:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {/* Paso 1 */}
             <div className="relative">
               <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-7 border border-slate-700 h-full">
@@ -1263,7 +1265,7 @@ export default function OnePager() {
       </section>
 
       {/* DevSculp Network */}
-      <section id="network" className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border-t border-slate-700">
+      <section id="network" className="py-12 sm:py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border-t border-slate-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-16">
@@ -1286,7 +1288,7 @@ export default function OnePager() {
           </div>
 
           {/* Stats destacadas */}
-          <div className="grid md:grid-cols-3 gap-6 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 sm:mb-16">
             <div className="bg-gradient-to-br from-purple-900/20 to-purple-800/10 rounded-2xl p-8 border border-purple-500/30 text-center">
               <div className="text-5xl font-bold text-purple-400 mb-2">{t.network.stats.commission}</div>
               <p className="text-slate-300 font-semibold">{t.network.stats.commissionLabel}</p>
@@ -1304,7 +1306,7 @@ export default function OnePager() {
           {/* Cómo funciona - Modelo */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-center mb-10 text-white">{t.network.howItWorks}</h3>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700 hover:border-purple-500/50 transition-all group">
                 <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">💼</div>
                 <h4 className="text-xl font-bold mb-3 text-purple-400">{t.network.model.title1}</h4>
@@ -1378,7 +1380,7 @@ export default function OnePager() {
           {/* Herramientas disponibles */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-center mb-10 text-white">{t.network.examples.title}</h3>
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 border border-slate-700 hover:border-purple-500/50 transition-all">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center">
@@ -1427,7 +1429,7 @@ export default function OnePager() {
           {/* Pricing */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-center mb-10 text-white">{t.network.pricing.title}</h3>
-            <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {/* Plan Free */}
               <div className="bg-slate-800/30 rounded-2xl p-6 border border-slate-700 text-center hover:border-slate-600 transition-all">
                 <h4 className="text-xl font-bold text-white mb-2">{t.network.pricing.free}</h4>
@@ -1603,7 +1605,7 @@ export default function OnePager() {
                   </svg>
                 </button>
                 {openFaq === idx && (
-                  <div className="px-7 pb-6 pt-2 animate-fadeIn">
+                  <div className="px-7 pb-6 pt-2 transition-all duration-300">
                     <p className="text-slate-300 text-sm leading-relaxed mb-2">{faq.answer}</p>
                   </div>
                 )}
