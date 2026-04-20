@@ -38,14 +38,9 @@ Si tenés dominio propio, cambiá el email en:
 - Línea 321 (Combo)
 - Línea 410 (Contacto)
 
-## 📦 Publicar en Vercel
+## 📦 Publicar en GitHub Pages
 
-```bash
-npm install -g vercel
-vercel
-```
-
-Sigue las instrucciones en pantalla. Tu sitio estará online en minutos.
+El deploy es automático via GitHub Actions. Cada `git push origin main` actualiza el sitio en producción automáticamente.
 
 ## 📄 Exportar como PDF
 
@@ -91,7 +86,7 @@ Perfecto para enviar por email a clientes.
 
 La sección "Proyectos Reales" incluye:
 - Sistema de Compras Públicas - SOAP Web Services, JBoss, Oracle, Dozer
-- Pipeline de Validación ARCE - Python, automatización, reglas de negocio, analytics
+- Pipeline de Validación (Organismo Gubernamental) - Python, automatización, reglas de negocio, analytics
 - Gestor de Convocatorias - JavaScript, MySQL, API REST, reportería Excel/JSON
 
 **Nota**: Los logros cuantificables (100% uptime, 15+ horas ahorradas, 5x optimización) son reales. Cuando tengas testimonios de clientes, simplemente reemplazá el array `achievements` por `testimonials` en el código.

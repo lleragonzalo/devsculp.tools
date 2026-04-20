@@ -579,7 +579,7 @@ export default function OnePager() {
       description: 'Desarrollo y mantenimiento de Web Services SOAP para plataforma gubernamental de contrataciones. Migración de mapeos Dozer, integración con Oracle y deployment en JBoss sin downtime.'
     },
     {
-      title: 'Pipeline de Validación Enterprise',
+      title: 'Pipeline de Validación – Organismo Gubernamental',
       description: 'Automatización de validaciones de reglas de negocio complejas (OF/AD/AC/LL/SCO) con Python. Procesamiento batch contra Oracle, generación de reportes Excel con análisis pivot y dashboard ejecutivo.'
     },
     {
@@ -592,7 +592,7 @@ export default function OnePager() {
       description: 'Development and maintenance of SOAP Web Services for government procurement platform. Dozer mapping migration, Oracle integration and JBoss deployment with zero downtime.'
     },
     {
-      title: 'ARCE Validation Pipeline',
+      title: 'Government Agency Validation Pipeline',
       description: 'Automation of complex business rules validation (OF/AD/AC/LL/SCO) with Python. Batch processing against Oracle, Excel report generation with pivot analysis and executive dashboard.'
     },
     {
